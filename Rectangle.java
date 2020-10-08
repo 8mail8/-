@@ -25,17 +25,19 @@ public class Rectangle extends Shape {
     }
 
     public double getWidth() {
+
         return width;
     }
 
     public void setWidth(double width) {
+
         this.width = width;
     }
 
     public double getLength() {
+
         return length;
     }
-
     public void setLenght(double lenght) {
         this.length = lenght;
     }

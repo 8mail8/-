@@ -29,8 +29,15 @@ public abstract class Shape {
     public double getPerimeter(){
         return 0.0;
     }
-
-
+    public double getRadius(){
+        return 0.0;
+    }
+    public double getLength(){
+        return 0.0;
+    }
+    public double getSide() {
+        return 0.0;
+    }
     @Override
     public String toString() {
         return "Shape{" +
