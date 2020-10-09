@@ -37,6 +37,8 @@ public class Circle extends Shape {
     }
 
     public String toString() {
-        return "Shape: circle, radius: "+this.radius+", color: "+this.color;
+        return "Shape: circle, 
+            radius: "+this.radius+", 
+            color: "+this.color;
     }
 }
