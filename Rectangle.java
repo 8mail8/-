@@ -5,17 +5,17 @@ public class Rectangle extends Shape {
     protected double length;
 
     public Rectangle( ) {
-        this.filled = false;
-        this.color = "blue";
         this.width = 10.0;
         this.length = 0.0;
+        this.filled = false;
+        this.color = "blue";
     }
 
     public Rectangle(double width, double length) {
-        this.filled = false;
-        this.color = "blue";
         this.width = width;
         this.length = length;
+        this.filled = false;
+        this.color = "blue";
     }
 
     public Rectangle(String color, boolean filled, double width, double length) {
@@ -38,19 +38,19 @@ public class Rectangle extends Shape {
 
         return length;
     }
-    public void setLenght(double lenght) {
-        this.length = lenght;
+
+    public void setLength(double length) {
+        this.length = length;
     }
-    @Override
+
     public double getArea() {
-
-        return width*length;
+        return
+                width*length;
     }
 
-    @Override
     public double getPerimeter() {
-
-        return 2 * width*length;
+        return
+                2*(width+length);
     }
 
     @Override

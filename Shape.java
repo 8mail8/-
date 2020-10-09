@@ -1,43 +1,51 @@
 package Laba34;
-public abstract class Shape {
-    public String color;
-    public boolean filled;
 
-    public Shape(){
+import java.math.*;
+import java.lang.*;
+
+public abstract class Shape  {
+    protected String color;
+    protected boolean filled;
+
+    public Shape() {
         this.color = "red";
         this.filled = false;
     }
-    public Shape(String color, boolean filled){
+
+    public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }
-    public String getColor(){
+
+    public String getColor() {
+
         return color;
     }
-    public void setColor(String color){
+
+    public void setColor(String color) {
+
         this.color = color;
     }
-    public boolean isFilled(){
+
+    public boolean isFilled() {
+
         return filled;
     }
-    public void setFilled(Boolean filled){
+
+    public void setFilled(boolean filled) {
+
         this.filled = filled;
     }
+
     public double getArea(){
+
         return 0.0;
     }
     public double getPerimeter(){
         return 0.0;
+
     }
-    public double getRadius(){
-        return 0.0;
-    }
-    public double getLength(){
-        return 0.0;
-    }
-    public double getSide() {
-        return 0.0;
-    }
+
     @Override
     public String toString() {
         return "Shape{" +

@@ -1,54 +1,42 @@
 package Laba34.Movable;
 
-public class MovableCircle extends MovablePoint{
-    public int radius;
-    public MovablePoint center;
+public class MovableCircle implements Movable {
+    protected int radius;
+    protected MovablePoint center;
 
-    public MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
-        super(x, y, xSpeed, ySpeed);
+    public MovableCircle(int x, int y, int xSpeed, int ySpeed, int
+            radius) {
         this.radius = radius;
+        this.center = new MovablePoint(x, y, xSpeed, ySpeed);
     }
 
-    public int getRadius() {
-        return radius;
-    }
 
-    public void setRadius(int radius) {
-        this.radius = radius;
-    }
-
-    public MovablePoint getCenter() {
-        return center;
-    }
-
-    public void setCenter(MovablePoint center) {
-        this.center = center;
-    }
-
+    @Override
     public String toString() {
-        return "MovablePoint{" +
-                "x=" + x +
-                ", y=" + y +
-                ", xSpeed=" + xSpeed +
-                ", ySpeed=" + ySpeed +
+        return "MovableCircle{" +
+                "radius=" + radius +
+                ", center=" + center +
                 '}';
     }
 
+    @Override
     public void moveUp() {
 
+        center.moveUp();
     }
-
+    @Override
     public void moveDown() {
 
+        center.moveDown();
     }
-
-    public void moveLeft() {
-
-    }
-
+    @Override
     public void moveRight() {
 
+        center.moveRight();
     }
-    
-}
+    @Override
+    public void moveLeft() {
 
+        center.moveLeft();
+    }
+}
