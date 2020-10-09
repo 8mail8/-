@@ -3,7 +3,7 @@ package Laba34;
 public class TestMain {
 
     public static void main(String[] args) {
-        Shape s1 = new Circle("red", false, 5.5); // Upcast Circle to Shape
+        Shape s1 = new Circle("red", false, 5.5); 
         System.out.println(s1);
         System.out.println(s1.getArea());
         System.out.println(s1.getPerimeter());
