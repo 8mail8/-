@@ -1,6 +1,6 @@
 package Laba34;
 
-public class Square<publiс> extends Rectangle {
+public class Square extends Rectangle {
 
     public Square() {
         this.filled = false;
@@ -34,9 +34,11 @@ public class Square<publiс> extends Rectangle {
     }
 
     public void setWidth(double side) {
+
         this.width = side;
     }
     public void setLength(double side) {
+
         this.length = side;
     }
 
